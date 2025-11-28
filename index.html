@@ -15,8 +15,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+sans+JP:wght@400;600;700&Outfit:wght@400&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+sans+JP:wght@400;600;700&Outfit:wght@400&display=swap"
         rel="stylesheet">
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
@@ -25,19 +24,115 @@
 </head>
 
 <body>
+    <!-- ヘッダー -->
     <header class="header">
-        <div class="header_container">
-        <h1 class="mv_title">
-            <picture>
-                <img class="mv-title_up" src="assets/image/mv_title_up_pc.png" alt="全身脱毛">
-                <img class="mv-title_down" src="assets/image/mv_title_downpc.png" alt="顔・VIO込">
-            </picture>
-        </h1>
+        <div class="header__inner">
 
-        
+            <!--ロゴ-->
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <picture class="header__logo-img">
+                        <source media="(min-width: 769px)" srcset="assets/image/header_logo_pc.svg">
+                        <img src="assets/image/header_logo_sp.svg" alt="KIRAMEKI BEAUTY LABO">
+                    </picture>
+                </a>
+            </div>
+
+            <!--ナビゲーション-->
+            <nav class="header__nav">
+                <a href="/contact/" class="header__btn header__btn-contact">
+                    <span class="header__btn-text">お問い合わせ</span>
+                    <span class="header__btn-icon">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="assets/image/header_icon_pc.svg">
+                            <img src="assets/image/header_icon_sp.svg" alt="">
+                        </picture>
+                    </span>
+                </a>
+                <a href="/counseling/" class="header__btn header__btn-counseling">
+                    <span class="header__btn-text">カウンセリング予約</span>
+                    <span class="header__btn-icon">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="assets/image/header_icon_pc.svg">
+                            <img src="assets/image/header_icon_sp.svg" alt="">
+                        </picture>
+                    </span>
+                </a>
+            </nav>
         </div>
     </header>
+
     <main>
+        <section class="main">
+            <div class="main__top">
+
+                <!-- メインタイトル -->
+                <h1 class="main__title">
+                    <picture class="main__title-img">
+                        <source media="(min-width: 769px)" srcset="assets/image/main_title_pc.png">
+                        <img src="assets/image/main_title_sp.png" alt="全身脱毛(顔・VIO)">
+                    </picture>
+                </h1>
+
+                <div class="main__price">
+                    <!-- 初月0円BOX -->
+                    <div class="main__price-box">
+                        <p class="main__price-label">今だけ</p>
+                        <p class="main__price-month">初月<span class="main__price-zero">0円</span></p>
+                    </div>
+                    <p class="main__price-yen">2,480円/月</p>
+                </div>
+            </div>
+            <!-- ボタンエリア -->
+            <div class="main__bottom">
+                <div class="main__list-group">
+                    <ul class="main__list">
+                        <li class="main__list-item">通い放題</li>
+                        <li class="main__list-item">追加料金なし</li>
+                        <li class="main__list-item">安心サポート</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="present">
+            <div class="present__container">
+                <p class="present__limited">今だけ！</p>
+
+                <div class="present__box">
+                    <p class="present__course">フェイシャルコース</p>
+                    <p class="present__gift"><span class="present__gift-num">3</span>回プレゼント！</p>
+                </div>
+                <p class="present__menu">クレンジング/洗顔/フェイスヒーリング/整肌</p>
+            </div>
+        </section>
+
+        <div class="cta">
+            <p class="cta__label">無料体験実施中！</p>
+
+            <a href="/counseling/" class="cta__btn">
+                <span class="cta__btn-text">カウンセリング予約<br>はこちら（無料）</span>
+
+                <span class="cta__icon">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="assets/image/cta_arrow_pc.svg">
+                        <img src="assets/image/cta_arrow_sp.svg" alt="" aria-hidden="true" class="cta__icon-img">
+                    </picture>
+                </span>
+            </a>
+
+            <div class="cta__content">
+                <h3 class="cta__content-title">無料体験内容</h3>
+
+                <p class="cta__content-text">
+                    《脱毛体験》 V(10分) or 両脇(10分)<br>
+                    《美顔体験》 フェイシャルトリートメント(40分コース1回)
+                </p>
+            </div>
+        </div>
+
+
+
     </main>
     <footer>
     </footer>
@@ -49,4 +144,5 @@
 
 
 </body>
+
 </html>
