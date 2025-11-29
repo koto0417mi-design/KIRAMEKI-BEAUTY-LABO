@@ -9,11 +9,11 @@ html {
 
 @media (min-width:768px) {
     html {
-        font-size: calc(10 * 100vw / 1030);
+        font-size: calc(10 * 100vw / 1070);
     }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1070px) {
     html {
         font-size: 62.5%;
     }
