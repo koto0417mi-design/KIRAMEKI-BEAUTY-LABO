@@ -40,17 +40,12 @@ li {
 }
 
 
-
-
-
-
-
-
 /* ヘッダー */
+.header {
+    padding: 1rem 0.9rem 1.2rem 1.2rem;
+}
+
 .header__inner {
-    max-width: 103rem;
-    margin-inline: auto;
-    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,59 +53,125 @@ li {
 
 .header__logo-img {
     display: block;
-    height: 3.6rem;
+    height: 3.9rem;
 }
 
-.header__nav {
+.header__btn-group {
     display: flex;
+    flex-direction: row;
     gap: 1rem;
 }
 
 .header__btn {
+    position: relative;
     display: flex;
-    align-items: center;
-    width: 10.7rem;
     height: 3.1rem;
     border-radius: 1.55rem;
-    text-align: center;
+    padding: 0.4rem 0.9rem 0.4rem 1.1rem;
+}
+
+.header__btn-text {
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
+    letter-spacing: 0.04em;
 }
 
-.header__btn--contact {
+.header__btn-text--small {
+    font-size: 1rem;
+}
+
+.header__btn-contact {
+    width: 10.7rem;
     background-color: #fa7da3;
 }
 
-.header__btn--counseling {
+.header__btn-counseling {
+    width: 17.4rem;
     background-color: #49c43d;
 }
 
-.header__btn-icon-img {
-    width: 0.6rem;
-    height: auto;
-    display: block;
+.header__btn-icon {
+    position: absolute;
+    top: 41%;
+    left: 86%;
+    transform: translateY(-50%);
 }
 
-@media (min-width: 769px) {
+.header__btn-img {
+    width: 0.6rem;
+}
+
+.header__btn-counseling-icon {
+    margin-left: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 1.9rem 21rem 2rem 20.8rem;
+    }
+
+    .header__inner {
+        max-width: 103rem;
+        margin-inline: auto;
+    }
+
     .header__logo-img {
+        height: 5.2rem;
+    }
+
+    .header__btn-group {
+        gap: 2.1rem;
+    }
+
+    .header__btn {
+        height: 5.1rem;
+        border-radius: 2.518rem;
+        padding: 0.6rem 1.5rem 0.6rem 2.3rem;
+    }
+
+    .header__btn-text {
+        font-size: 2.112rem;
+        letter-spacing: 0;
+    }
+
+    .header__btn-text--small {
+        font-size: 1.787rem;
+    }
+
+    .header__btn-contact {
+        width: 18.8rem;
+    }
+
+    .header__btn-counseling {
+        width: 29.5rem;
+    }
+
+    .header__btn-icon {
+        position: absolute;
+        top: 50%;
+        left: 86%;
+        transform: translateY(-50%);
+    }
+
+    .header__btn-img {
         width: 1rem;
     }
-    .header__btn {
-        font-size: 2.112rem;
+
+    .header__btn-counseling-icon {
+        margin-left: 1.4rem;
     }
+
 }
-
-
-
-
-
-
 
 /* メイン */
 
 .main {
-    background: #fa7da3; /* 全体のピンク背景 */
+    background: #fa7da3;
+    /* 全体のピンク背景 */
+    background-image: url(/assets/image/main_cover_sp.png);
+    background-repeat: no-repeat;
+    background-position: 2% 100%;
 }
 
 .main__top {
@@ -119,80 +180,567 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 0;
+}
+
+.main__title {
+    padding: 2.1rem 1.9rem;
 }
 
 /* タイトル画像（h1） */
-.main__title-img{
+.main__title-img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
 .main__price {
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 18.8rem;
 }
+
 
 /* 初月0円ボックス */
 .main__price-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     background: #fca4bf;
-    padding: 1rem;
+    padding: 0.8rem 1rem 2.2rem 1.4rem;
+    box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
-.main__price-label {
+.main__price-box--inner {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+
+.main__price-now {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #e4418d;
+    color: #fa7da3;
     background-color: #fff;
-    padding: 1rem;
+    padding: 0.4rem 0.4rem 0.6rem;
 }
 
 .main__price-month {
-    margin-top: 1rem;
     font-size: 2.4rem;
     font-weight: 700;
     color: #fff;
+    margin-left: 0;
 }
+
+
 
 .main__price-zero {
     font-size: 7.6rem;
     font-weight: 700;
     color: #fffd7a;
-    margin-left: 0.2rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.main__price-zero--yen {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fffd7a;
 }
 
 
-.main__price-yen {
-    font-style: outfit;
+.main__price-cost {
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     color: #fff;
+    margin: 0.4rem 0 0 9.9rem;
 }
 
+.main__price-cost--yen {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+
+
 .main__bottom {
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* リストグループ */
 .main__list-group {
-    max-width: 360px;
-    margin-inline: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* ボタンリスト（縦並び） */
 .main__list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
+    align-items: flex-end;
+    padding: 1.9rem 2.6rem 2.9rem;
 }
 
 .main__list-item {
+    display: inline-block;
+    width: 13.3rem;
     border: 2px solid #fff;
-    padding: 1.4rem;
-    border-radius: 0.6rem;
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #fff;
     text-align: center;
-    background: rgba(255,255,255,0.1);
 }
 
+@media (min-width: 768px) {
+    .main {
+        background-image: url(/assets/image/main_cover_pc.png);
+        background-repeat: no-repeat;
+        background-position: 21.4% 100%;
+    }
+
+    .main__top {
+        justify-content: start;
+        gap: 1.6rem;
+    }
+
+    .main__title {
+        padding: 0;
+        margin-left: 1.9rem;
+    }
+
+    .main__price {
+        width: 42.302rem;
+    }
+
+    .main__price-box {
+        gap: 2.3rem;
+        padding: 1.5rem 2.4rem 2rem 3rem;
+    }
+
+    .main__price-box--inner {
+        gap: 2.2rem;
+        margin-top: 0;
+    }
+
+
+    .main__price-now {
+        font-size: 2.925rem;
+        padding: 1rem ;
+    }
+
+    .main__price-month {
+        font-size: 5.4rem;
+        margin-left: 0.3rem;
+    }
+
+
+
+    .main__price-zero {
+        font-size: 17.1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .main__price-zero--yen {
+        font-size: 8.1rem;
+    }
+
+
+    .main__price-cost {
+        font-size: 2.648rem;
+        margin: 0rem 0 0 24.3rem;
+    }
+
+    .main__price-cost--yen {
+        font-size: 1.702rem;
+    }
+
+    .main__list {
+        gap: 2rem;
+        padding: 4.2rem 23.6rem 5.2rem;
+    }
+
+    .main__list-item {
+        width: 42.4rem;
+        height: 7rem;
+        font-size: 2.8rem;
+    }
+
+}
+
+
+
+
+
+
+
+/* プレゼント */
+
+.present {
+    background-color: #fffedd;
+    padding: 1.6rem 1.9rem 3.2rem;
+}
+
+.present__container {
+    max-width: 35rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.present__limited {
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #fa7da3;
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* 左の＼ */
+.present__limited::before {
+    content: "";
+    position: absolute;
+    left: 32.5%;
+    top: 50%;
+    width: 0.5rem;
+height: 2.7rem;
+    transform: translateY(-50%) rotate(-30deg);
+    border-left: 0.2rem solid #fa7da3;
+}
+
+/* 右の／ */
+.present__limited::after {
+    content: "";
+    position: absolute;
+    right: 36.5%;
+    top: 50%;
+    width: 0.5rem;
+height: 2.7rem;
+    transform: translateY(-50%) rotate(30deg);
+    border-right: 0.2rem solid #fa7da3;
+}
+
+
+.present__box {
+    border: 0.1rem solid #fa7da3;
+    border-radius: 1rem;
+    margin-bottom: 0.6rem;
+    line-height: 1;
+}
+
+.present__course {
+    background-color: #fa7da3;
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 400;
+    padding: 0.2rem 2rem 0.7rem;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.present__gift {
+    padding: 0.7rem 1.9rem 1.2rem 3.2rem;
+    border-radius: 0 0 1rem 1rem ;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #fa7da3;
+    background-color: #fff;
+}
+
+.present__gift-num {
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
+.present__menu {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .present {
+        padding: 4.8rem 4rem 6.4rem;
+    }
+
+    .present__limited {
+        font-size: 3.4rem;
+        margin-bottom: 3.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+.trial {
+    padding: 2rem 2rem 3rem;
+}
+
+.trial__title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #fa7da3;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+.trial__btn {
+    position: relative;
+    display: block;
+    width: 35rem;
+    height: 8rem;
+    background-color: #49c43d;
+    border-radius: 4rem;
+    text-align: center;
+}
+
+.trial__btn-text {
+     color: #fff;
+ font-size: 2.1rem;
+ font-weight: 700;
+}
+
+.trial__icon {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+}
+
+.trial__icon-img {
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .trial {
+        padding: 2rem 3rem 3rem;
+    }
+
+    .trial__title {
+        font-size: 3.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+    }
+
+    .trial__btn {
+        width: 57.058rem;
+        height: 13.01rem;
+        border-radius: 6.505rem;
+    }
+
+    .trial__btn-text {
+        font-size: 3.4rem;
+    }
+
+}
+
+
+
+
+.content {
+    padding: 0 1.9rem;
+}
+
+.content__box {
+    max-width: 35rem;
+    margin-inline: auto;
+}
+
+.content__title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #50bfff;
+    margin-bottom: 0.4rem;
+    border-top: 0.1rem solid #50bfff;
+    border-bottom: 0.1rem solid #50bfff;
+}
+
+
+.content__text {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .content__title {
+        font-size: 2.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .content__text {
+        font-size: 2.286rem;
+    }
+}
+
+
+
+
+
+
+
+/* ３つのポイント */
+
+.points {
+    background-color: #fdf0f5;
+    padding: 3rem 2rem 3rem;
+}
+
+.present__container {
+    max-width: 35rem;
+    margin-inline: auto;
+}
+
+.points__title {
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.points__title-img {
+    display: inline-block;
+    width: 100%;
+}
+
+.points__title-text {
+    font-size: 1.8rem;
+font-weight: 600;
+color: #4d2b1b;
+}
+
+
+.points__title-main {
+    font-size: 3.2rem;
+font-weight: 700;
+color: #fa7da3;
+}
+
+.points__title-main-img-left {
+    width: 100%;
+    display: inline-block;
+}
+.points__title-main-img-right {
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+
+.points__item-box {
+    text-align: center;
+    border: #fa7da3 0.1rem solid;
+    border-radius: 1rem;
+}
+
+.points__item-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background-color: #fa7da3;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.points__item-box {
+    padding: 1.6rem 2.4rem 2.4rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem ;
+}
+
+.points__item-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.points__item-box-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.points__item-compare-left {
+    border: #fa7da3 0.1rem solid;
+}
+
+.points__item-compare-img {
+    width: 100%;
+}
+.points__item-compare-right {
+    border: #333 0.1rem solid;
+    background-color: #fdf0f5;
+}
+
+.points__item-compare-label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #433e3f;
+    
+}
+
+.points__item-compare-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+
+
+.points__body {
+    padding: 1rem;
+}
+
+.points__item-plan {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #4d2c1c;
+    text-align: center;
+}
+
+.points__body-img {
+    width: 100%;
+    display: block;
+}
+
+.points__part {
+    padding: 1rem;
+}
+
+.points__part-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
