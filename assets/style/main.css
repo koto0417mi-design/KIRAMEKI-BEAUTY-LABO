@@ -291,7 +291,9 @@ li {
 }
 
 .main__list-item {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 13.3rem;
     border: 2px solid #fff;
     font-size: 1.8rem;
@@ -334,7 +336,7 @@ li {
 
     .main__price-now {
         font-size: 2.925rem;
-        padding: 1rem ;
+        padding: 1rem;
     }
 
     .main__price-month {
@@ -386,11 +388,10 @@ li {
 
 .present {
     background-color: #fffedd;
-    padding: 1.6rem 1.9rem 3.2rem;
+    padding: 1.6rem 1.9rem 1.2rem;
 }
 
 .present__container {
-    max-width: 35rem;
     margin-inline: auto;
     text-align: center;
 }
@@ -411,7 +412,7 @@ li {
     left: 32.5%;
     top: 50%;
     width: 0.5rem;
-height: 2.7rem;
+    height: 2.7rem;
     transform: translateY(-50%) rotate(-30deg);
     border-left: 0.2rem solid #fa7da3;
 }
@@ -423,14 +424,14 @@ height: 2.7rem;
     right: 36.5%;
     top: 50%;
     width: 0.5rem;
-height: 2.7rem;
+    height: 2.7rem;
     transform: translateY(-50%) rotate(30deg);
     border-right: 0.2rem solid #fa7da3;
 }
 
 
 .present__box {
-    border: 0.1rem solid #fa7da3;
+    border: 0.2rem solid #fa7da3;
     border-radius: 1rem;
     margin-bottom: 0.6rem;
     line-height: 1;
@@ -442,12 +443,12 @@ height: 2.7rem;
     font-size: 2.1rem;
     font-weight: 400;
     padding: 0.2rem 2rem 0.7rem;
-    border-radius: 1rem 1rem 0 0 ;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .present__gift {
     padding: 0.7rem 1.9rem 1.2rem 3.2rem;
-    border-radius: 0 0 1rem 1rem ;
+    border-radius: 0 0 1rem 1rem;
     font-size: 2.7rem;
     font-weight: 400;
     color: #fa7da3;
@@ -463,6 +464,7 @@ height: 2.7rem;
     font-size: 1rem;
     font-weight: 400;
     color: #333;
+    margin-right: 0.2rem;
 }
 
 
@@ -475,13 +477,58 @@ height: 2.7rem;
 
 @media (min-width: 768px) {
     .present {
-        padding: 4.8rem 4rem 6.4rem;
+        padding: 3.5rem 4rem 2.4rem;
     }
+
+    .present__container {
+        max-width: 55rem;
+    }
+
 
     .present__limited {
         font-size: 3.4rem;
-        margin-bottom: 3.2rem;
+        margin-bottom: 1rem;
     }
+
+    .present__limited::before {
+        left: 33%;
+        width: 0.8rem;
+        height: 4.3rem;
+        border-left: 0.3rem solid #fa7da3;
+    }
+
+
+    .present__limited::after {
+        right: 35.5%;
+        width: 0.8rem;
+        height: 4.3rem;
+        border-right: 0.3rem solid #fa7da3;
+    }
+
+
+    .present__box {
+        margin-bottom: 1.2rem;
+    }
+
+    .present__course {
+        font-size: 3.2rem;
+        padding: 0.5rem 3rem 1.2rem;
+    }
+
+    .present__gift {
+        padding: 1rem 3.3rem 2rem 5rem;
+        font-size: 4.367rem;
+    }
+
+    .present__gift-num {
+        font-size: 6.793rem;
+    }
+
+
+    .present__menu {
+        font-size: 1.4rem;
+    }
+
 }
 
 
@@ -492,7 +539,7 @@ height: 2.7rem;
 
 
 .trial {
-    padding: 2rem 2rem 3rem;
+    padding: 1.3rem 2rem 3rem;
 }
 
 .trial__title {
@@ -501,6 +548,8 @@ height: 2.7rem;
     color: #fa7da3;
     text-align: center;
     margin-bottom: 0.4rem;
+    letter-spacing: 0.1em;
+    margin-left: 0.9rem;
 }
 
 .trial__btn {
@@ -513,16 +562,19 @@ height: 2.7rem;
     text-align: center;
 }
 
-.trial__btn-text {
-     color: #fff;
- font-size: 2.1rem;
- font-weight: 700;
+.trial__text {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    padding: 1.3rem 2rem 1.2rem;
 }
 
 .trial__icon {
     position: absolute;
-    top: 50%;
-    right: 40%;
+    top: 50.2%;
+    right: 9.2%;
     transform: translateY(-50%);
 }
 
@@ -535,7 +587,7 @@ height: 2.7rem;
 
 @media (min-width: 768px) {
     .trial {
-        padding: 2rem 3rem 3rem;
+        padding: 4.9rem 3rem 3rem;
     }
 
     .trial__title {
@@ -548,9 +600,10 @@ height: 2.7rem;
         width: 57.058rem;
         height: 13.01rem;
         border-radius: 6.505rem;
+        margin-inline: auto;
     }
 
-    .trial__btn-text {
+    .trial__text {
         font-size: 3.4rem;
     }
 
@@ -560,7 +613,7 @@ height: 2.7rem;
 
 
 .content {
-    padding: 0 1.9rem;
+    padding: 0.1rem 2rem 3.5rem;
 }
 
 .content__box {
@@ -573,9 +626,12 @@ height: 2.7rem;
     font-size: 1.7rem;
     font-weight: 600;
     color: #50bfff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
     border-top: 0.1rem solid #50bfff;
     border-bottom: 0.1rem solid #50bfff;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    padding: 1rem 1rem 1.2rem;
 }
 
 
@@ -584,7 +640,10 @@ height: 2.7rem;
     font-size: 1.4rem;
     font-weight: 400;
     color: #333;
-    line-height: 1;
+}
+
+.content__text-small {
+    font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
@@ -608,7 +667,7 @@ height: 2.7rem;
 
 .points {
     background-color: #fdf0f5;
-    padding: 3rem 2rem 3rem;
+    padding: 3.2rem 2rem 3rem;
 }
 
 .present__container {
@@ -616,118 +675,191 @@ height: 2.7rem;
     margin-inline: auto;
 }
 
+
+/* ポイントタイトル部分 */
+
+
 .points__title {
-    text-align: center;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.7rem;
 }
 
 .points__title-img {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 20rem;
+}
+
+.points__title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.3rem;
 }
 
 .points__title-text {
     font-size: 1.8rem;
-font-weight: 600;
-color: #4d2b1b;
+    font-weight: 600;
+    color: #4d2b1b;
+    letter-spacing: 0.04em;
 }
 
 
-.points__title-main {
+.points__title-main-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.points__title-main-text {
     font-size: 3.2rem;
-font-weight: 700;
-color: #fa7da3;
+    font-weight: 700;
+    color: #fa7da3;
+    letter-spacing: 0.04em;
 }
 
-.points__title-main-img-left {
-    width: 100%;
-    display: inline-block;
-}
+.points__title-main-img-left,
 .points__title-main-img-right {
-    width: 100%;
-    display: inline-block;
+    width: 3.8rem;
+    display: block;
 }
 
 
 
 
 
+/* ポイント1 */
 
-.points__item-box {
+
+.points__item-first {
     text-align: center;
     border: #fa7da3 0.1rem solid;
     border-radius: 1rem;
 }
 
-.points__item-title {
+.points__item-first-title {
     font-size: 1.8rem;
     font-weight: 400;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     background-color: #fa7da3;
-    border-radius: 1rem 1rem 0 0 ;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
 }
 
-.points__item-box {
-    padding: 1.6rem 2.4rem 2.4rem;
+.points__item-first-box {
+    padding: 1.4rem 1.9rem 1.1rem;
     background-color: #fff;
-    border-radius: 0 0 1rem 1rem ;
+    border-radius: 0 0 1rem 1rem;
+    margin-bottom: 3.1rem;
 }
 
-.points__item-text {
+.points__item-first-text {
+    text-align: start;
     font-size: 1.4rem;
     font-weight: 400;
     color: #333;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.2rem;
 }
 
-.points__item-box-inner {
+.points__item-first-box-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2.2rem;
+}
+
+
+
+
+.points__item-compare-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .points__item-compare-left {
     border: #fa7da3 0.1rem solid;
+    padding: 2.2rem 4.1rem 2.2rem 3rem;
 }
 
 .points__item-compare-img {
+    display: block;
     width: 100%;
 }
+
 .points__item-compare-right {
     border: #333 0.1rem solid;
     background-color: #fdf0f5;
+    padding: 2.5rem 3.2rem 2.7rem 3.5rem;
 }
 
 .points__item-compare-label {
     font-size: 1.8rem;
     font-weight: 400;
     color: #433e3f;
-    
+    letter-spacing: 0.12em;
 }
 
 .points__item-compare-text {
     font-size: 1.4rem;
     font-weight: 400;
     color: #333;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
 }
 
 
 
+
+
+
+
+
+
+/* ポイント２ */
+
+
+.points__item-second {
+    text-align: center;
+    border: #fa7da3 0.1rem solid;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.points__item-second-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    background-color: #fa7da3;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+.points__item-second-box {
+    padding: 1.4rem 0.5rem 1.1rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.points__item-second-text {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.7rem;
+}
 
 
 
 .points__body {
-    padding: 1rem;
-}
-
-.points__item-plan {
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #4d2c1c;
-    text-align: center;
+    margin-top: 2.1rem;
+    margin-left: 0.1rem;
 }
 
 .points__body-img {
@@ -736,11 +868,160 @@ color: #fa7da3;
 }
 
 .points__part {
-    padding: 1rem;
+    padding: 2.3rem 0.2rem 0;
 }
+
+
+.points__item-plan-body {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #4d2c1c;
+    text-align: center;
+}
+
+.points__item-plan-part {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #4d2c1c;
+    text-align: center;
+    margin-top: 4rem;
+}
+
 
 .points__part-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.7rem;
 }
+
+.points__part-list-top,
+.points__part-list-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.points__part-item-text {
+    font-size: 1.4rem ;
+    font-weight: 600;
+    color: #fa7da3;
+}
+
+
+
+
+
+
+/* ポイント3 */
+
+
+.points__item-third {
+    text-align: center;
+    border: #fa7da3 0.1rem solid;
+    border-radius: 1rem;
+}
+
+.points__item-third-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    background-color: #fa7da3;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+.points__item-third-box {
+    padding: 1.3rem 2rem 0.6rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.points__item-third-text {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.2rem;
+}
+
+
+
+
+/* 無料体験ボタン部分 */
+
+.cta {
+    padding: 2.3rem 2rem 3rem;
+}
+
+.cta__title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #fa7da3;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.1em;
+    margin-left: 0.9rem;
+}
+
+.cta__btn {
+    position: relative;
+    display: block;
+    width: 35rem;
+    height: 8rem;
+    background-color: #49c43d;
+    border-radius: 4rem;
+    text-align: center;
+}
+
+.cta__text {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    padding: 1.3rem 2rem 1.2rem;
+}
+
+.cta__icon {
+    position: absolute;
+    top: 50.2%;
+    right: 9.2%;
+    transform: translateY(-50%);
+}
+
+.cta__icon-img {
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .cta {
+        padding: 2rem 3rem 3rem;
+    }
+
+    .cta__title {
+        font-size: 3.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+    }
+
+    .cta__btn {
+        width: 57.058rem;
+        height: 13.01rem;
+        border-radius: 6.505rem;
+    }
+
+    .cta__btn-text {
+        font-size: 3.4rem;
+    }
+
+}
+
+
