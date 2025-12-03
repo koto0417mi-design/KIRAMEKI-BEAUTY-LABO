@@ -31,10 +31,7 @@
             <!--ロゴ-->
             <div class="header__logo">
                 <a href="/" class="header__logo-link">
-                    <picture class="header__logo-img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/header_logo_pc.svg" alt="">
-                        <img src="/assets/image/header_logo_sp.svg" alt="KIRAMEKI BEAUTY LABO">
-                    </picture>
+                        <img class="header__logo-img" src="/assets/image/header_logo.svg" alt="KIRAMEKI BEAUTY LABO">
                 </a>
             </div>
 
@@ -43,19 +40,13 @@
                 <a href="/contact/" class="header__btn header__btn-contact">
                     <p class="header__btn-text">お問い合わせ</p>
                     <span class="header__btn-icon">
-                        <picture class="header__btn-img">
-                            <source media="(min-width: 768px)" srcset="/assets/image/header_icon_pc.svg" alt="">
-                            <img src="/assets/image/header_icon_sp.svg" alt="">
-                        </picture>
+                            <img class="header__btn-img" src="/assets/image/header_icon.svg" alt="">
                     </span>
                 </a>
                 <a href="/counseling/" class="header__btn header__btn-counseling">
-                    <p class="header__btn-text">カウンセリング予約<span class="header__btn-text--small">(無料)</span></p>
+                    <p class="header__btn-text">カウンセリング予約<span class="header__btn-text-small">(無料)</span></p>
                     <span class="header__btn-icon header__btn-counseling-icon">
-                        <picture class="header__btn-img">
-                            <source media="(min-width: 768px)" srcset="/assets/image/header_icon_pc.svg" alt="">
-                            <img src="/assets/image/header_icon_sp.svg" alt="">
-                        </picture>
+                            <img class="header__btn-img" src="/assets/image/header_icon.svg" alt="">
                     </span>
                 </a>
             </div>
@@ -65,26 +56,27 @@
     <main>
         <!-- メイン -->
         <section class="main">
+            <div class="main__container">
             <div class="main__top">
 
                 <!-- タイトル -->
                 <h1 class="main__title">
-                    <picture class="main__title-img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/main_title_pc.png" alt="全身脱毛(顔・VIO)">
-                        <img src="/assets/image/main_title_sp.png" alt="全身脱毛(顔・VIO)">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/main_title_pc.png">
+                        <img class="main__title-img" src="/assets/image/main_title_sp.png" alt="全身脱毛(顔・VIO)">
                     </picture>
                 </h1>
 
                 <!-- 初月0円 -->
                 <div class="main__price">
                     <div class="main__price-box">
-                        <div class="main__price-box--inner">
+                        <div class="main__price-box-inner">
                             <p class="main__price-now">今だけ</p>
                             <p class="main__price-month">初月</p>
                         </div>
-                        <p class="main__price-zero">0<span class="main__price-zero--yen">円</span></p>
+                        <p class="main__price-zero">0<span class="main__price-zero-yen">円</span></p>
                     </div>
-                    <p class="main__price-cost">2,480<span class="main__price-cost--yen">円／月</span></p>
+                    <p class="main__price-cost">2,480<span class="main__price-cost-yen">円／月</span></p>
                 </div>
             </div>
 
@@ -97,6 +89,7 @@
                         <li class="main__list-item">安心サポート</li>
                     </ul>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -132,10 +125,7 @@
             <a href="/counseling/" class="trial__btn">
                 <p class="trial__text">カウンセリング予約<br>はこちら（無料）</p>
                 <span class="trial__icon">
-                    <picture class="trial__icon-img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/trial_btn_pc.svg">
-                        <img src="/assets/image/trial_btn_sp.svg" alt="">
-                    </picture>
+                        <img class="trial__icon-img" src="/assets/image/trial_btn.svg" alt="">
                 </span>
             </a>
         </section>
@@ -163,24 +153,14 @@
 
                 <div class="points__title">
                     <div class="points__title-box">
-                        <picture class="points__title-img">
-                            <source media="(min-width: 768px)" srcset="/assets/image/point_logo_pc.svg"
-                                alt="KIRAMEKI BEAUTY LABO">
-                            <img src="/assets/image/point_logo_sp.svg" alt="KIRAMEKI BEAUTY LABO">
-                        </picture>
+                            <img class="points__title-img" src="/assets/image/point_logo.svg" alt="KIRAMEKI BEAUTY LABO">
                         <p class="points__title-text">が選ばれる</p>
                     </div>
 
                     <div class="points__title-main-box">
-                        <picture class="points__title-main-img-left">
-                            <source media="(min-width: 768px)" srcset="/assets/image/kirakira_left_pc.svg" alt="">
-                            <img src="/assets/image/kirakira_left_sp.svg" alt="">
-                        </picture>
+                            <img  src="/assets/image/kirakira_left.svg" alt="">
                         <p class="points__title-main-text">3つのポイント</p>
-                        <picture class="points__title-main-img-right">
-                            <source media="(min-width: 768px)" srcset="/assets/image/kirakira_right_pc.svg" alt="">
-                            <img src="/assets/image/kirakira_right_sp.svg" alt="">
-                        </picture>
+                            <img  src="/assets/image/kirakira_right.svg" alt="">
                     </div>
                 </div>
 
@@ -195,11 +175,7 @@
 
                             <div class="points__item-compare-box">
                                 <div class="points__item-compare-left">
-                                    <picture class="points__item-compare-img">
-                                        <source media="(min-width: 768px)" srcset="/assets/image/point1_logo_pc.svg"
-                                            alt="">
-                                        <img src="/assets/image/point1_logo_sp.svg" alt="">
-                                    </picture>
+                                        <img class="points__item-compare-img" src="/assets/image/point1_logo.svg" alt="">
                                 </div>
                                 <p class="points__item-compare-text">来店1回で全身1回</p>
                             </div>
@@ -225,9 +201,9 @@
                         <p class="points__item-second-text">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
                         <p class="points__item-plan-body">全身プラン</p>
                         <div class="points__body">
-                            <picture class="points__body-img">
+                            <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/body_pc.png" alt="">
-                                <img src="/assets/image/body_sp.png" alt="">
+                                <img class="points__body-img" src="/assets/image/body_sp.png" alt="全身プラン">
                             </picture>
 
                          
@@ -240,7 +216,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_1_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_1_sp.png" alt="">
+                                            <img src="/assets/image/part_1_sp.png" alt="うなじ">
                                         </picture>
                                         <p class="points__part-item-text">うなじ</p>
                                     </li>
@@ -248,7 +224,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_2_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_2_sp.png" alt="">
+                                            <img src="/assets/image/part_2_sp.png" alt="ワキ">
                                         </picture>
                                         <p class="points__part-item-text">ワキ</p>
                                     </li>
@@ -256,7 +232,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_3_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_3_sp.png" alt="">
+                                            <img src="/assets/image/part_3_sp.png" alt="Oライン">
                                         </picture>
                                         <p class="points__part-item-text">Oライン</p>
                                     </li>
@@ -266,7 +242,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_4_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_4_sp.png" alt="">
+                                            <img src="/assets/image/part_4_sp.png" alt="おでこ">
                                         </picture>
                                         <p class="points__part-item-text">おでこ</p>
                                     </li>
@@ -274,7 +250,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_5_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_5_sp.png" alt="">
+                                            <img src="/assets/image/part_5_sp.png" alt="あご">
                                         </picture>
                                         <p class="points__part-item-text">あご</p>
                                     </li>
@@ -282,7 +258,7 @@
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="/assets/image/part_6_pc.png"
                                                 alt="">
-                                            <img src="/assets/image/part_6_sp.png" alt="">
+                                            <img src="/assets/image/part_6_sp.png" alt="フェイスライン">
                                         </picture>
                                         <p class="points__part-item-text">フェイスライン</p>
                                     </li>
@@ -291,7 +267,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
 
             <!-- ポイント3 -->
@@ -304,6 +279,7 @@
                     <p class="points__item-third-text">提携医療機関のサポートがありますので、ご安心ください。</p>
 
                 </div>
+            </div>
             </div>
 
         </section>
@@ -321,10 +297,7 @@
             <a href="/counseling/" class="cta__btn">
                 <p class="cta__text">カウンセリング予約<br>はこちら（無料）</p>
                 <span class="cta__icon">
-                    <picture class="cta__icon-img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/trial_btn_pc.svg">
-                        <img src="/assets/image/trial_btn_sp.svg" alt="">
-                    </picture>
+                        <img class="trial__icon-img" src="/assets/image/trial_btn.svg" alt="">
                 </span>
             </a>
 
@@ -365,10 +338,7 @@
             <a href="/counseling/" class="trial__btn">
                 <p class="trial__text">カウンセリング予約<br>はこちら（無料）</p>
                 <span class="trial__icon">
-                    <picture class="trial__icon-img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/trial_btn_pc.svg">
-                        <img src="/assets/image/trial_btn_sp.svg" alt="">
-                    </picture>
+                        <img class="trial__icon-img" src="/assets/image/trial_btn.svg" alt="">
                 </span>
             </a>
         </section>

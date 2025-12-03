@@ -42,7 +42,7 @@ li {
 
 /* ヘッダー */
 .header {
-    padding: 1rem 0.9rem 1.2rem 1.2rem;
+    padding: 1rem 0.9rem 0.9rem 1.2rem;
 }
 
 .header__inner {
@@ -53,7 +53,8 @@ li {
 
 .header__logo-img {
     display: block;
-    height: 3.9rem;
+    width: 7.2rem;
+    height: 4.1rem;
 }
 
 .header__btn-group {
@@ -67,7 +68,7 @@ li {
     display: flex;
     height: 3.1rem;
     border-radius: 1.55rem;
-    padding: 0.4rem 0.9rem 0.4rem 1.1rem;
+    padding: 0.3rem 0.9rem 0.3rem 1.1rem;
 }
 
 .header__btn-text {
@@ -77,7 +78,7 @@ li {
     letter-spacing: 0.04em;
 }
 
-.header__btn-text--small {
+.header__btn-text-small {
     font-size: 1rem;
 }
 
@@ -93,13 +94,14 @@ li {
 
 .header__btn-icon {
     position: absolute;
-    top: 41%;
+    top: 36%;
     left: 86%;
     transform: translateY(-50%);
 }
 
 .header__btn-img {
     width: 0.6rem;
+    height: 1rem;
 }
 
 .header__btn-counseling-icon {
@@ -117,7 +119,8 @@ li {
     }
 
     .header__logo-img {
-        height: 5.2rem;
+        width: 9.7rem;
+        height: 5.4rem;
     }
 
     .header__btn-group {
@@ -135,7 +138,7 @@ li {
         letter-spacing: 0;
     }
 
-    .header__btn-text--small {
+    .header__btn-text-small {
         font-size: 1.787rem;
     }
 
@@ -156,6 +159,7 @@ li {
 
     .header__btn-img {
         width: 1rem;
+        height: 1.6rem;
     }
 
     .header__btn-counseling-icon {
@@ -167,16 +171,19 @@ li {
 /* メイン */
 
 .main {
-    background: #fa7da3;
-    /* 全体のピンク背景 */
-    background-image: url(/assets/image/main_cover_sp.png);
-    background-repeat: no-repeat;
-    background-position: 2% 100%;
+    background: #fa7da3;    
+}
+
+.main__container {
+    max-width: 39rem;
+    margin-inline: auto;
+      background-image: url(/assets/image/main_cover_sp.png);
+  background-repeat: no-repeat;
+  background-position: 2% 100%;
+  background-size: 20.9rem;
 }
 
 .main__top {
-    max-width: 103rem;
-    margin-inline: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -184,12 +191,13 @@ li {
 }
 
 .main__title {
-    padding: 2.1rem 1.9rem;
+    padding: 2.2rem 0.3rem 2.2rem 1.9rem;
 }
 
 /* タイトル画像（h1） */
 .main__title-img {
-    width: 100%;
+    width: 16.6rem;
+    height: 6.7rem;
     display: block;
 }
 
@@ -209,15 +217,16 @@ li {
     align-items: center;
     gap: 1rem;
     background: #fca4bf;
-    padding: 0.8rem 1rem 2.2rem 1.4rem;
+    padding: 1rem 2.2rem 2.1rem 2.7rem;
     box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
-.main__price-box--inner {
+.main__price-box-inner {
     display: flex;
     flex-direction: column;
     line-height: 1;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
+    gap: 0;
 }
 
 
@@ -233,7 +242,7 @@ li {
     font-size: 2.4rem;
     font-weight: 700;
     color: #fff;
-    margin-left: 0;
+    margin-top: 0.8rem;
 }
 
 
@@ -246,7 +255,7 @@ li {
     margin-bottom: 0;
 }
 
-.main__price-zero--yen {
+.main__price-zero-yen {
     font-size: 3.6rem;
     font-weight: 700;
     color: #fffd7a;
@@ -261,7 +270,7 @@ li {
     margin: 0.4rem 0 0 9.9rem;
 }
 
-.main__price-cost--yen {
+.main__price-cost-yen {
     font-weight: 400;
     font-size: 0.9rem;
     color: #fff;
@@ -295,7 +304,8 @@ li {
     justify-content: center;
     align-items: center;
     width: 13.3rem;
-    border: 2px solid #fff;
+    height: 3.5rem;
+    border: 1.9px solid #fff;
     font-size: 1.8rem;
     font-weight: 400;
     color: #fff;
@@ -303,10 +313,14 @@ li {
 }
 
 @media (min-width: 768px) {
-    .main {
+
+    .main__container {
+        max-width: 103rem;
         background-image: url(/assets/image/main_cover_pc.png);
         background-repeat: no-repeat;
-        background-position: 21.4% 100%;
+        background-position: 0 100%;
+        background-size: 48.5rem;
+
     }
 
     .main__top {
@@ -315,8 +329,12 @@ li {
     }
 
     .main__title {
-        padding: 0;
-        margin-left: 1.9rem;
+        padding: 0 0 1.2rem 1.9rem;
+    }
+
+    .main__title-img {
+        width: 54.1rem;
+        height: 20.2rem;
     }
 
     .main__price {
@@ -324,12 +342,12 @@ li {
     }
 
     .main__price-box {
-        gap: 2.3rem;
-        padding: 1.5rem 2.4rem 2rem 3rem;
+        gap: 2.2rem;
+        padding: 1.2rem 3.2rem 2rem 3.6rem;
     }
 
-    .main__price-box--inner {
-        gap: 2.2rem;
+    .main__price-box-inner {
+        gap: 1.2rem;
         margin-top: 0;
     }
 
@@ -341,7 +359,6 @@ li {
 
     .main__price-month {
         font-size: 5.4rem;
-        margin-left: 0.3rem;
     }
 
 
@@ -351,7 +368,7 @@ li {
         margin-bottom: 1.6rem;
     }
 
-    .main__price-zero--yen {
+    .main__price-zero-yen {
         font-size: 8.1rem;
     }
 
@@ -361,18 +378,18 @@ li {
         margin: 0rem 0 0 24.3rem;
     }
 
-    .main__price-cost--yen {
+    .main__price-cost-yen {
         font-size: 1.702rem;
     }
 
     .main__list {
         gap: 2rem;
-        padding: 4.2rem 23.6rem 5.2rem;
+        padding: 4.2rem 3rem 5.6rem;
     }
 
     .main__list-item {
         width: 42.4rem;
-        height: 7rem;
+        height: 6.9rem;
         font-size: 2.8rem;
     }
 
@@ -403,7 +420,7 @@ li {
     font-weight: 400;
     color: #fa7da3;
     margin-left: 1.5rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 /* 左の＼ */
@@ -432,7 +449,7 @@ li {
 
 
 .present__box {
-    border: 0.2rem solid #fa7da3;
+    border: 0.1rem solid #fa7da3;
     border-radius: 1rem;
     margin-bottom: 0.6rem;
     line-height: 1;
@@ -445,6 +462,7 @@ li {
     font-weight: 400;
     padding: 0.2rem 2rem 0.7rem;
     border-radius: 1rem 1rem 0 0;
+    letter-spacing: 0;
 }
 
 .present__gift {
@@ -488,11 +506,12 @@ li {
 
     .present__limited {
         font-size: 3.4rem;
+        margin-left: 1rem;
         margin-bottom: 1rem;
     }
 
     .present__limited::before {
-        left: 33%;
+        left: 33.6%;
         width: 0.8rem;
         height: 4.3rem;
         border-left: 0.3rem solid #fa7da3;
@@ -500,7 +519,7 @@ li {
 
 
     .present__limited::after {
-        right: 35.5%;
+        right: 34.8%;
         width: 0.8rem;
         height: 4.3rem;
         border-right: 0.3rem solid #fa7da3;
@@ -508,16 +527,17 @@ li {
 
 
     .present__box {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
     }
 
     .present__course {
         font-size: 3.2rem;
-        padding: 0.5rem 3rem 1.2rem;
+        padding: 0.4rem 3.6rem 1rem 3rem;
+        letter-spacing: 0.01em;
     }
 
     .present__gift {
-        padding: 1rem 3.3rem 2rem 5rem;
+        padding: 1.2rem 3.3rem 2.1rem 5rem;
         font-size: 4.367rem;
     }
 
@@ -540,7 +560,7 @@ li {
 
 
 .trial {
-    padding: 1.3rem 2rem 3rem;
+    padding: 1.2rem 2rem 3rem;
 }
 
 .trial__title {
@@ -580,7 +600,8 @@ li {
 }
 
 .trial__icon-img {
-    width: 100%;
+    width: 1.2rem;
+    height: 1.9rem;
 }
 
 
@@ -588,13 +609,13 @@ li {
 
 @media (min-width: 768px) {
     .trial {
-        padding: 4.9rem 3rem 4.7rem;
+        padding: 4.7rem 3rem 4.5rem;
     }
 
     .trial__title {
         font-size: 3.4rem;
         font-weight: 600;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.9rem;
     }
 
     .trial__btn {
@@ -606,7 +627,12 @@ li {
 
     .trial__text {
         font-size: 3.4rem;
-        padding: 2rem;
+        padding: 2rem 2rem 2rem 1.7rem;
+    }
+
+    .trial__icon-img {
+        width: 1.8rem;
+        height: 3.1rem;
     }
 
 }
@@ -642,8 +668,8 @@ li {
     font-size: 1.4rem;
     font-weight: 400;
     color: #333;
-    letter-spacing: 0;
-    margin-left: 0;
+    letter-spacing: -0.01em;
+    margin-left: 0.2rem;
 }
 
 .content__text-small {
@@ -661,7 +687,7 @@ li {
 
     .content__title {
         font-size: 2.8rem;
-        padding: 1.7rem 1rem 1.9rem;
+        padding: 1.7rem 1rem 1.9rem 0.8rem;
         margin-bottom: 1.4rem;
     }
 
@@ -689,7 +715,7 @@ li {
     padding: 3.2rem 2rem 3rem;
 }
 
-.present__container {
+.poimts__container {
     max-width: 35rem;
     margin-inline: auto;
 }
@@ -704,7 +730,8 @@ li {
 
 .points__title-img {
     display: block;
-    width: 20rem;
+    width: 19.8rem;
+    height: 1.5rem;
 }
 
 .points__title-box {
@@ -713,6 +740,7 @@ li {
     justify-content: center;
     align-items: center;
     margin-left: 0.3rem;
+    gap: 0;
 }
 
 .points__title-text {
@@ -720,6 +748,7 @@ li {
     font-weight: 600;
     color: #4d2b1b;
     letter-spacing: 0.04em;
+    margin-top: 0;
 }
 
 
@@ -740,39 +769,43 @@ li {
 .points__title-main-img-left,
 .points__title-main-img-right {
     width: 3.8rem;
+    height: 4.4rem;
     display: block;
 }
 
 @media (min-width: 768px) {
 .points {
-        padding: 4.6rem 2rem 6.3rem;
+        padding: 4.7rem 2rem 6.3rem;
     }
 
     .points__title {
-        margin-bottom: 4.7rem;
+        margin-bottom: 4.5rem;
     }
 
 .points__title-box {
         margin-left: 0;
+        gap: 0.6rem;
     }
 
     .points__title-img {
-        width: 26.5rem;
+        width: 26.2rem;
+        height: 2.2rem;
     }
 
     .points__title-text {
         font-size: 1.807rem;
         font-weight: 500;
         letter-spacing: 0;
+        margin-top: 0.1rem;
     }
 
     .points__title-main-text {
         font-size: 4.2rem;
     }
 
-    .points__title-main-img-left,
-    .points__title-main-img-right {
-        width: 6rem;
+    .points__title-main-box img {
+        width: 5.9rem;
+        height: 5rem;
     }
 
 }
@@ -840,7 +873,8 @@ li {
 
 .points__item-compare-img {
     display: block;
-    width: 100%;
+    width: 7.1rem;
+    height: 3.9rem;
 }
 
 .points__item-compare-right {
@@ -867,7 +901,7 @@ li {
     .points__item-first {
         max-width: 78rem;
         margin-inline: auto;
-        margin-bottom: 5.4rem;
+        margin-bottom: 5rem;
     }
 
     .points__item-first-title {
@@ -878,29 +912,40 @@ li {
     }
 
     .points__item-first-box {
-        padding: 2.3rem 3rem 3rem 4rem;
+        padding: 2.3rem 3rem 2.7rem 4rem;
         margin-bottom: 0rem;
     }
 
     .points__item-first-box-inner {
         justify-content: center;
-        gap: 5.2rem;
+        gap: 4.2rem;
+        margin-right: 1rem;
     }
 
 
 
     .points__item-first-text {
         font-size: 2.1rem;
-        margin-bottom: 2.4rem;
-        letter-spacing: 0;
+        margin-bottom: 2.6rem;
+        letter-spacing: 0.008em;
     }
 
     .points__item-compare-left {
-        padding: 3.4rem 5.5rem 3.6rem 5.5rem;
+        padding: 3.4rem 5.4rem 3.6rem 6rem;
+        width: 23.1rem;
+        height: 13.5rem;
     }
 
+    .points__item-compare-img {
+        width: 11.6rem;
+        height: 6.5rem;
+    }
+
+
     .points__item-compare-right {
-        padding: 4rem 5rem 4.4rem 6.8rem;
+        padding: 3.8rem 1.4rem 4.4rem 1.4rem;
+        width: 23.1rem;
+        height: 13.4rem;
     }
 
     .points__item-compare-label {
@@ -910,6 +955,7 @@ li {
 
     .points__item-compare-text {
         font-size: 2.1rem;
+        padding: 0.7rem 1rem ;
     }
 }
 
@@ -963,7 +1009,8 @@ li {
 }
 
 .points__body-img {
-    width: 100%;
+    width: 33.1rem;
+    height: 35.1rem;
     display: block;
 }
 
@@ -1009,13 +1056,17 @@ li {
     color: #fa7da3;
 }
 
+.points__part-item img {
+    width: 10rem;
+    height: 3.3rem;
+}
 
 
 @media (min-width: 768px) {
     .points__item-second {
         max-width: 78rem;
         margin-inline: auto;
-        margin-bottom: 5.1rem;
+        margin-bottom: 5rem;
     }
 
     .points__item-second-title {
@@ -1024,22 +1075,27 @@ li {
     }
 
     .points__item-second-box {
-        padding: 2.8rem 3.9rem 1.7rem;
+        padding: 2.8rem 3.9rem 1.9rem;
     }
 
     .points__item-second-text {
         font-size: 2.1rem;
         margin-bottom: 2.1rem;
-        letter-spacing: 0;
+        letter-spacing: 0.005em;
     }
 
     .points__body {
-        margin-top: 1.6rem;
-        margin-left: 2.9rem;
+        margin-top: 1.5rem;
+        margin-left: 8.3rem;
+    }
+
+    .points__body-img {
+        width: 56rem;
+        height: 60.1rem;
     }
 
     .points__part {
-        padding: 2.5rem 2rem 1.2rem;
+        padding: 2.3rem 2rem 1.2rem;
     }
 
     .points__item-plan-body,
@@ -1048,12 +1104,17 @@ li {
     }
 
     .points__item-plan-part {
-        margin-top: 4.9rem;
+        margin-top: 5.1rem;
     }
 
     .points__part-list {
        flex-direction: row;
        gap: 1.2rem;
+    }
+
+    .points__part-item img {
+        width: 10rem;
+        height: 10rem;
     }
 
     .points__part-list-top,
