@@ -1,8 +1,9 @@
 
 const swiper = new Swiper(".voice__slider", {
-    slidesPerView: 1,
-    spaceBetween:20,
-
+    slidesPerView: 1.3,
+    spaceBetween:15,
+    centeredSlides:true,
+    initialSlide:1,
       pagination: {
     el: '.voice__pagination',
     clickable: true,
@@ -11,7 +12,7 @@ const swiper = new Swiper(".voice__slider", {
       breakpoints: {
     768: {
       slidesPerView: 3,
-      spaceBetween:30,
+      spaceBetween:15,
       pagination: { enabled: false },
       allowTouchMove:false,
     }
