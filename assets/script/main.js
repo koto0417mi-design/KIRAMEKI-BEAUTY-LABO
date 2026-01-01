@@ -3,7 +3,7 @@ const swiper = new Swiper(".voice__slider", {
     slidesPerView: 1.26,
     watchSlidesProgress: true,
     roundLengths: true,
-    
+
     spaceBetween: 15,
     centeredSlides: true,
     initialSlide: 1,
